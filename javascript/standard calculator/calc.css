@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+  font-family: Lexand Deca, sans-serif;
+}
+main{
+  border: 2px solid;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 20rem;
+  padding: 0.6rem;
+  margin: 3rem auto;
+  gap: 0.5rem;
+}
+#title{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin: 3rem auto;
+}
+.total-result{
+  grid-column: span 4;
+  border-radius: 1rem;
+  height: 5rem;
+  background-color: turquoise;
+  text-align: end;
+  padding: 0.5rem;
+  color: black;
+}
+.top-result{
+  display: flex;
+  font-size: 1rem;
+  justify-content: end;
+  height: 1.5rem;
+}
+.delete, .clear{
+  grid-column: span 2;
+  border-radius: 10px;
+}
+.delete,.operand,.equal, .clear{
+  font-weight: bolder;
+  background-color: teal;
+  height: 4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.5rem;
+}
+.equal, .operand{
+  border-radius: 100%;
+}
+.operand:hover, .same:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.operand:active, .same:active{
+  opacity: 0.2;
+  cursor: pointer;
+}
+.second-numer{
+  font-size: 2rem;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version" : 3,
+  "version": "1.0",
+  "name": "Lead Tracker",
+  "description": "This is an interacting App",
+  "action":{
+    "default_popup": "extension.html",
+    "default_icon": "dollar.png"
+  },
+   "permissions":[
+    "tabs"
+   ]
+} 

@@ -1,0 +1,35 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("/javascript/BlackJack\ Card/blackcardimg.jpg") ; 
+  animation-name: example;
+  animation-duration: 2s;
+  background-size: cover;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+@keyframes example{
+  50%{background-image: url("/javascript/BlackJack\ Card/blackcardimg.jpg")}
+  100% {background-image: url("/javascript/BlackJack\ Card/bg-image.jpg")}
+}
+
+#message-el{
+   font-style: italic;
+}
+h1{
+  color: gold;
+}
+button{
+  border: none;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: goldenrod;
+  width: 150px;
+  color: #016f32;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

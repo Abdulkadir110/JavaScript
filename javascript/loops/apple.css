@@ -1,0 +1,24 @@
+body{
+  margin-top: 10px;
+}
+
+#apple-self{
+  background-color: rgb(214, 121, 121);
+  width: 250px;
+  height: 40px;
+  margin-left: 550px;
+  margin-top: 180px;
+  border-radius: 4px;
+  
+
+}
+
+#orange-self{
+  background-color: rgb(102, 204, 235);
+  width: 250px;
+  height: 40px;
+  margin-left: 550px;
+  margin-top: 5px;
+  border-radius: 4px;
+
+}

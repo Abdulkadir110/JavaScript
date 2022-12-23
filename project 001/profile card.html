@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile card</title>
+ <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ --> 
+<style>
+  .container{
+    background-color: rgba(182, 169, 169, 0.363);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .description{
+    width: 200px;
+  }
+  .description-head{
+    position: absolute;
+    top: 35px;
+    left: 32%;
+  }
+  .description p{
+    position: absolute;
+    top: 15%;
+    left: 32%;
+  }
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 40px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+ .card img{
+  border-radius: 20px;
+ }
+.title {
+  color: grey;
+  font-size: 20px;
+}
+
+.contact-btn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a img{
+  width: 40px;
+  margin-left:20px;
+  height: auto;
+  display: inline-flex;
+  
+}
+.click-btn{
+  position: absolute;
+  left: 32%;
+  top: 40%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <img src="/project 001/mypic.jpg" alt="Abdulkadir" style="width:100%;border-radius: 100%;">
+    <h1>Zakariyah Abdulkadir</h1>
+    <p class="title">Undergraduate, Computer Engineering</p>
+    <p style="font-size: 20px; font-weight:400;">University of Ilorin</p>
+    <div>
+      <a href="https://www.instagram.com/abdulquadir__/#" target="_blank"><img src="/project 001/instagram.png"></a> 
+      <a href="https://twitter.com/_akollypops" target="_blank"><img src="/project 001/twitter.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100011944897992" target="_blank"><img src="/project 001/facebook.png"></a>   
+      <a href="https://www.linkedin.com/in/abdulquadir-sakariyah-36207b237/" target="_blank"><img src="/project 001/linkedln.png"></a>  
+    </div>
+    <a href ="https://wa.me/2348142949508" target="_blank"><button class="contact-btn">Contact</button></a>
+  </div>
+  <div class="description">
+    <h1 class="description-head">About Me</h1>
+    <button class="click-btn"onclick="typeWriter()">Click me</button>
+    <p id="demo"></p>
+  </div>
+</div>  
+  
+<script>
+  var i = 0;
+  var txt = 'Lorem ipsum dummy text blabla.';
+  var speed = 50;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  </script>
+
+</body>
+</html>

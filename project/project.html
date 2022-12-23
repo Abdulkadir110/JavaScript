@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/project/css/header.css" rel="stylesheet"/>
+    <link href="/project/css/aboutus.css" rel="stylesheet" />
+    <link href="/project/css/form.css" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav id="topnav">
+      <div class="heading">
+        <h4>BUSINESS CONNECTION BLOG</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li data-modal="modalOne"><a href="">Contact</a></li>
+        <li><a href="pages/Join.html">Join Us</a></li>
+      </ul>
+    </nav>
+   
+    <div class="banner-bg" id="home">
+      <div>
+        <h1 class="banner-text">Linking buyer with seller</h1>
+        
+      </div>
+     
+      </div>
+
+      <section id="aboutus">
+        <div class="section">
+          <div class="container">
+            <div class="content-section">
+              <div class="title">
+                <h1>About Us</h1>
+              </div>
+              <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+                <div class="button" >
+                  <a href ="">Read More</a>
+                  <div class="openBtn">
+                    <button class="openButton" onclick="openForm()"><strong>Open Form</strong></button>
+                  </div>
+                  <div class="loginPopup">
+                    <div class="formPopup" id="popupForm">
+                      <form action="/action_page.php" class="formContainer">
+                        <h2>Please Log in</h2>
+                        <label for="email">
+                          <strong>E-mail</strong>
+                        </label>
+                        <input type="text" id="email" placeholder="Your Email" name="email" required>
+                        <label for="psw">
+                          <strong>Password</strong>
+                        </label>
+                        <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+                        <button type="submit" class="btn">Log in</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="/project/images/ecommerce1.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+           <img class="footer-img" src="/project/images/companies.png">
+        <script src="/project/project.js"></script>
+  </body>
+</html>
